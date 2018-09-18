@@ -4,6 +4,8 @@ html {
 
 body {
   font-size: 1em;
+  margin: 0;
+  padding: 0;
 }
 
 main {
@@ -25,9 +27,9 @@ main {
 
 /* ------HEADER-------*/
 
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 
 #header {
   display: -webkit-flex;

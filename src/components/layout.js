@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
 import Nav from './Nav'
+import Footer from './Footer'
 import '../styles/layout.css'
 
 const Layout = ({ children }) => (
@@ -30,16 +31,8 @@ const Layout = ({ children }) => (
         </Helmet>
         {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
         <Nav />
-        <div
-          style={{
-            margin: '0 auto',
-            maxWidth: 960,
-            padding: '0px 1.0875rem 1.45rem',
-            paddingTop: 0,
-          }}
-        >
-          {children}
-        </div>
+        <main>{children}</main>
+        <Footer />
       </>
     )}
   />
