@@ -1,0 +1,197 @@
+.hero {
+  display: -ms-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 90vh;
+  box-sizing: border-box;
+  color: #fff;
+  background: linear-gradient(0.5turn, rgba(0, 0, 0, 0.5), transparent),
+    url('../images/hero7-min.jpg') 50% no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+}
+.hero .hero__container {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+.hero .hero__container .hero__info {
+  width: 100%;
+  padding-top: 25%;
+  font-size: 1em;
+  line-height: 1.5;
+}
+.hero .hero__container .hero__info .hero__title {
+  font-size: 5em;
+  font-weight: bold;
+}
+.hero .hero__container .hero__info .hero__title-secondary {
+  font-size: 3.5em;
+}
+.hero .hero__container .hero__info .hero__title-garanty {
+  font-size: 3.5em;
+  font-weight: bold;
+}
+.hero .hero__container .hero__contact {
+  width: 100%;
+  padding-top: 0%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  line-height: 2em;
+}
+.hero .hero__container .hero__contact .hero__button {
+  margin-bottom: 20px;
+  margin-top: 10%;
+}
+.hero .hero__container .hero__contact .hero__link {
+  color: white;
+  text-decoration: none;
+  font-size: 3.2em;
+  line-height: 1.8em;
+}
+.hero .hero__container .hero__contact .hero__link:hover {
+  color: #f36b23;
+}
+.hero .hero__container .hero__contact .hero__button {
+  padding-top: 2em;
+}
+
+.main-about {
+  padding-top: 50px;
+}
+.main-about .main-about__header {
+  text-align: center;
+  font-size: 3em;
+}
+.main-about .main-about__cards {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.main-about .main-about__card {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-align-self: center;
+  -ms-flex-item-align: center;
+  justify-content: space-between;
+  width: 90%;
+  height: 22em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  background-color: #fff;
+  border: 1px dotted #f36b23;
+  text-align: center;
+}
+.main-about .main-about__card .main-about__card-header,
+.main-about .main-about__card .main-about__card-text,
+.main-about .main-about__card .main-about__card-button {
+  text-align: center;
+  font-size: 2em;
+}
+.main-about .main-about__card .main-about__card-button {
+  width: 80%;
+  margin: 25px auto;
+  padding: auto;
+  color: white;
+  background-color: #f36b23;
+  height: 60px;
+  border-radius: 8px;
+  border: none;
+}
+.main-about .main-about__card .main-about__card-button:hover {
+  background-color: #575252;
+  cursor: pointer;
+}
+.main-about .main-about__card .main-about__card-link {
+  height: 2em;
+  background-color: #f36b23;
+  color: white;
+}
+.main-about .main-about__card .main-about__card-link:hover {
+  cursor: pointer;
+  background-color: #ffc658;
+}
+
+@media (min-width: 992px) {
+  .hero .hero__container {
+    flex-direction: row;
+    width: 100%;
+    min-height: 90vh;
+    margin: auto;
+    justify-content: space-around !important;
+    text-align: left !important;
+  }
+  .hero .hero__container .hero__info {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 45%;
+    margin: auto;
+    padding-top: 0;
+    line-height: 3em;
+  }
+  .hero .hero__container .hero__info .hero__title {
+    font-size: 5em;
+    padding-bottom: 0.5em;
+  }
+  .hero .hero__container .hero__info .hero__title-secondary {
+    font-size: 2em;
+  }
+  .hero .hero__container .hero__info .hero__title-garanty {
+    font-size: 2em;
+  }
+  .hero .hero__container .hero__contact {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 25%;
+    margin: auto;
+    padding: 0;
+  }
+  .hero .hero__container .hero__contact .hero__link {
+    font-weight: bold;
+    line-height: 1em;
+    font-size: 1.5em;
+    padding-bottom: 1.5em;
+    font-weight: 600;
+  }
+  .hero .hero__container .hero__contact .hero__button {
+    margin-top: 0;
+  }
+
+  .main-about .main-about__header {
+    text-align: center;
+    font-size: 2.5em;
+  }
+  .main-about .main-about__cards .main-about__card {
+    width: 30%;
+  }
+  .main-about .main-about__cards .main-about__card-header,
+  .main-about .main-about__cards .main-about__card-text,
+  .main-about .main-about__cards .main-about__card-button {
+    text-align: center;
+    font-size: 1.5em;
+  }
+}
