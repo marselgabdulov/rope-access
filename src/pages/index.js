@@ -12,14 +12,14 @@ const IndexPage = () => (
           <span className="hero__title">Остекление</span>
           <br />
           <span className="hero__title-secondary">
-            Замена, монтаж и обслуживание
+            Замена, монтаж и обслуживание.
           </span>
           <br />
           <span className="hero__title-secondary">
-            Работаем по всей Москве и области
+            Работаем по всей Москве и области.
           </span>
           <br />
-          <span className="hero__title-garanty">Гарантия от 2-х лет</span>
+          <span className="hero__title-garanty">Гарантия от 2-х лет.</span>
         </div>
         <div className="hero__contact">
           <a className="hero__link" href="tel:+74957963303">

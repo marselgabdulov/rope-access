@@ -13,66 +13,65 @@
   width: 100%;
   position: relative;
 }
-.hero .hero__container {
+.hero__container {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
   flex-direction: column;
   width: 80%;
-  margin: auto;
+  margin: 10% auto;
   text-align: center;
 }
-.hero .hero__container .hero__info {
+.hero__info {
   width: 100%;
-  padding-top: 25%;
+  padding-top: 0;
+  margin-top: 0;
   font-size: 1em;
   line-height: 1.5;
 }
-.hero .hero__container .hero__info .hero__title {
-  font-size: 5em;
+.hero__title {
+  font-size: 2em;
   font-weight: bold;
 }
-.hero .hero__container .hero__info .hero__title-secondary {
-  font-size: 3.5em;
+.hero__title-secondary {
+  font-size: 1.5em;
 }
-.hero .hero__container .hero__info .hero__title-garanty {
-  font-size: 3.5em;
+.hero__title-garanty {
+  font-size: 1.5em;
   font-weight: bold;
 }
-.hero .hero__container .hero__contact {
+.hero__contact {
   width: 100%;
   padding-top: 0%;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
   flex-direction: column;
-  line-height: 2em;
+  line-height: 1em;
 }
-.hero .hero__container .hero__contact .hero__button {
+.hero__button {
   margin-bottom: 20px;
   margin-top: 10%;
+  padding-top: 2em;
 }
-.hero .hero__container .hero__contact .hero__link {
+.hero__link {
   color: white;
   text-decoration: none;
-  font-size: 3.2em;
+  font-size: 1.2em;
   line-height: 1.8em;
 }
-.hero .hero__container .hero__contact .hero__link:hover {
+.hero__link:hover {
   color: #f36b23;
-}
-.hero .hero__container .hero__contact .hero__button {
-  padding-top: 2em;
 }
 
 .main-about {
   padding-top: 50px;
 }
-.main-about .main-about__header {
+.main-about__header {
   text-align: center;
   font-size: 3em;
 }
-.main-about .main-about__cards {
+.main-about__cards {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
@@ -82,7 +81,7 @@
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-.main-about .main-about__card {
+.main-about__card {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
@@ -100,13 +99,13 @@
   border: 1px dotted #f36b23;
   text-align: center;
 }
-.main-about .main-about__card .main-about__card-header,
-.main-about .main-about__card .main-about__card-text,
-.main-about .main-about__card .main-about__card-button {
+.main-about__card-header,
+.main-about__card-text,
+.main-about__card-button {
   text-align: center;
   font-size: 2em;
 }
-.main-about .main-about__card .main-about__card-button {
+.main-about__card-button {
   width: 80%;
   margin: 25px auto;
   padding: auto;
@@ -116,22 +115,22 @@
   border-radius: 8px;
   border: none;
 }
-.main-about .main-about__card .main-about__card-button:hover {
+.main-about__card-button:hover {
   background-color: #575252;
   cursor: pointer;
 }
-.main-about .main-about__card .main-about__card-link {
+.main-about__card-link {
   height: 2em;
   background-color: #f36b23;
   color: white;
 }
-.main-about .main-about__card .main-about__card-link:hover {
+.main-about__card-link:hover {
   cursor: pointer;
   background-color: #ffc658;
 }
 
 @media (min-width: 992px) {
-  .hero .hero__container {
+  .hero__container {
     flex-direction: row;
     width: 100%;
     min-height: 90vh;
@@ -139,7 +138,7 @@
     justify-content: space-around !important;
     text-align: left !important;
   }
-  .hero .hero__container .hero__info {
+  .hero__info {
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
@@ -150,17 +149,17 @@
     padding-top: 0;
     line-height: 3em;
   }
-  .hero .hero__container .hero__info .hero__title {
+  .hero__title {
     font-size: 5em;
     padding-bottom: 0.5em;
   }
-  .hero .hero__container .hero__info .hero__title-secondary {
+  .hero__title-secondary {
     font-size: 2em;
   }
-  .hero .hero__container .hero__info .hero__title-garanty {
+  .hero__title-garanty {
     font-size: 2em;
   }
-  .hero .hero__container .hero__contact {
+  .hero__contact {
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
@@ -170,27 +169,27 @@
     margin: auto;
     padding: 0;
   }
-  .hero .hero__container .hero__contact .hero__link {
+  .hero__link {
     font-weight: bold;
     line-height: 1em;
     font-size: 1.5em;
     padding-bottom: 1.5em;
     font-weight: 600;
   }
-  .hero .hero__container .hero__contact .hero__button {
+  .hero__button {
     margin-top: 0;
   }
 
-  .main-about .main-about__header {
+  .main-about__header {
     text-align: center;
     font-size: 2.5em;
   }
-  .main-about .main-about__cards .main-about__card {
+  .main-about__card {
     width: 30%;
   }
-  .main-about .main-about__cards .main-about__card-header,
-  .main-about .main-about__cards .main-about__card-text,
-  .main-about .main-about__cards .main-about__card-button {
+  .main-about__card-header,
+  .main-about__card-text,
+  .main-about__card-button {
     text-align: center;
     font-size: 1.5em;
   }
