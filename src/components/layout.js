@@ -7,6 +7,7 @@ import logo from '../images/logo-small.png'
 
 import Nav from './Nav'
 import Footer from './Footer'
+import '../styles/normalize.css'
 import '../styles/layout.css'
 
 const Layout = ({ children }) => (

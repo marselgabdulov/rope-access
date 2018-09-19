@@ -17,25 +17,20 @@
 }
 .bm-menu {
   background: #373a47;
-  padding: auto;
-  font-size: 1.5em;
-  line-height: 1.5em;
-  max-width: 100%;
-  margin: auto;
-  max-height: 90vh;
+  padding: 1.2em;
+  width: auto;
 }
 .bm-morph-shape {
   fill: #373a47;
-  overflow: hidden;
 }
 .bm-item-list {
   color: #b8b7ad;
-  padding: 0.8em;
-  overflow-y: hidden;
+  overflow: hidden;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  margin: auto;
 }
 .bm-item {
-  display: flex;
-  flex-direction: column;
   color: white;
   text-decoration: none;
 }
