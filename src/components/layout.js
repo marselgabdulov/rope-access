@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
+import Link from 'gatsby-link'
+import logo from '../images/logo-small.png'
 
 import Nav from './Nav'
 import Footer from './Footer'
@@ -30,9 +32,14 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
         {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
+        <div className="logo">
+          <Link to="/" className="nav__link">
+            <img src={logo} alt="Высотник" />
+          </Link>
+        </div>
         <Nav />
-        <main>{children}</main>
-        <Footer />
+        <main id="page-wrap">{children}</main>
+        <Footer id="page-wrap" />
       </>
     )}
   />
