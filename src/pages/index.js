@@ -15,10 +15,10 @@ const IndexPage = () => (
             Высотные работы
             <br />
             <span className="title-desc"> Москва и область</span>
-            {/* <Typewriter
+            <Typewriter
               className="title-desc"
               texts={['Остекление.', 'Установка.', 'Покраска.', 'Мойка.']}
-            /> */}
+            />
           </h1>
         </div>
         <div className="grid">

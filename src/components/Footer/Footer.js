@@ -37,7 +37,7 @@ export function Footer() {
             Парнерам
           </Link>
           <Link to="/investors" className="button -block">
-            Ивесторам
+            Инвесторам
           </Link>
         </div>
       </div>
