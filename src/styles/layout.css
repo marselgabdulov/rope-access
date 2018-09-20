@@ -39,6 +39,9 @@ main {
     padding-top: 120px;
     min-height: calc(100vh - 250px);
   }
+  .logo {
+    display: block;
+  }
   .container {
     width: 80%;
   }

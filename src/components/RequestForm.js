@@ -5,7 +5,7 @@ const RequestForm = () => (
   <form
     action="https://formspree.io/marsel.gabdulov@gmail.com"
     method="POST"
-    className="form"
+    className="request-form"
   >
     <input
       className="input-name"

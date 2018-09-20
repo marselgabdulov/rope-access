@@ -38,10 +38,10 @@
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  width: 90%;
+  width: 80%;
   margin: auto;
   justify-content: space-between;
-  font-size: 3em;
+  font-size: 1em;
   padding-top: 1em;
 }
 .modal__close-button {
@@ -56,7 +56,6 @@
 }
 
 .modal__body {
-  padding: 10px 20px;
   color: black;
 }
 

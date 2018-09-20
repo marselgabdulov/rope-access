@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from 'react'
 import Link from 'gatsby-link'
-import logo from '../images/logo-small.png'
 import { slide as Menu } from 'react-burger-menu'
 import '../styles/nav.css'
 
