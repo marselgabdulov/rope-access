@@ -14,16 +14,11 @@ const IndexPage = () => (
             <br />
             Высотные работы
             <br />
-            <span>по всей Москве и области</span>
-            <Typewriter
+            <span className="title-desc"> Москва и область</span>
+            {/* <Typewriter
               className="title-desc"
-              texts={[
-                'Остекление.',
-                'Установка.',
-                'Малярные работы.',
-                'Мойка.',
-              ]}
-            />
+              texts={['Остекление.', 'Установка.', 'Покраска.', 'Мойка.']}
+            /> */}
           </h1>
         </div>
         <div className="grid">

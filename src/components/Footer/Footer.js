@@ -1,99 +1,46 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import './footer.css'
 
-const Footer = () => (
-  <footer className="footer">
-    <div className="footer__container">
-      <div className="footer__address footer__section">
-        <span className="footer__block-header">Адрес</span>
-        <ul className="footer__items">
-          <li className="footer__item">111033, г. Москва,</li>
-          <li className="footer__item">Золоторожский средний</li>
-          <li className="footer__item">переулок, д. 13</li>
-        </ul>
+export function Footer() {
+  return (
+    <div>
+      <div className="grid">
+        <h2 className="col md-push-1 lg-push-2">Свяжитесь с нами</h2>
       </div>
-      <div className="footer__contacts  footer__section">
-        <span className="footer__block-header">Контакты</span>
-        <ul className="footer__items">
-          <li className="footer__item">
-            <a className="footer__link" href="tel:+74957963303">
-              +7 495 796-33-03
-            </a>
-          </li>
-          <li className="footer__item">
-            <a className="footer__link" href="tel:+74953909633">
-              +7 495 390-96-33
-            </a>
-          </li>
-          <li className="footer__item">
-            <a
-              className="footer__link whatsapp"
-              href="https://wa.me/79651897920?text=Я%20заинтересован%20в%20заказе%20услуг%20остекления"
-            >
+
+      <div className="grid">
+        <p className="col sm-12 md-5 lg-3 md-push-1 lg-push-3 contact">
+          <span className="contact-phone">
+            <a href="tel:+74957963303">+7 495 796-33-03</a>
+          </span>
+          <span className="contact-phone">
+            <a href="tel:+74953909633">+7 495 390-96-33</a>
+          </span>
+          <span className="contact-phone">
+            <a href="https://wa.me/79651897920?text=Я%20заинтересован%20в%20заказе%20услуг%20остекления">
               WhatsApp
             </a>
-          </li>
-          <li className="footer__item footer__contacts-item">
-            <a className="footer__link" href="mailto:info@vysotnik-msk.ru">
-              info@vysotnik-msk.ru
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div className="footer__requisites  footer__section">
-        <span className="footer__block-header">Меню</span>
-        <ul className="footer__items">
-          <li className="footer__item">
-            <Link to="/" className="footer__link">
-              Главная
-            </Link>
-          </li>
-          <li className="footer__item">
-            <Link to="/about" className="footer__link">
-              О нас
-            </Link>
-          </li>
-          <li className="footer__item">
-            <Link to="/services" className="footer__link">
-              Услуги
-            </Link>
-          </li>
-          <li className="footer__item">
-            <Link to="/contacts" className="footer__link">
-              Контакты
-            </Link>
-          </li>
-          <li className="footer__item">
-            <Link to="/blog" className="footer__link">
-              Блог
-            </Link>
-          </li>
-        </ul>
-      </div>
-      <div className="footer__working-time  footer__section">
-        <span className="footer__block-header">Время работы</span>
-        <ul className="footer__items">
-          <li>Ежедневно: 9:00—20:00</li>
-        </ul>
-      </div>
+          </span>
+          <span className="contact-or">
+            <span>или</span>
+          </span>
+          <a className="contact-link" href="mailto:info@vysotnik-msk.ru">
+            info@vysotnik-msk.ru
+          </a>
+        </p>
 
-      <div className="footer__admin-links  footer__section">
-        <ul className="footer__items">
-          <li className="footer__item">
-            <Link to="/admin" className="footer__link">
-              техподдержка
-            </Link>
-          </li>
-          <li className="footer__item">
-            <Link to="/vacancies" className="footer__link">
-              викансии
-            </Link>
-          </li>
-        </ul>
+        <div className="col fluid md-3 lg-2 md-push-1 lg-push-2 button-group">
+          <Link to="/vacancies" className="button -block">
+            Вакансии
+          </Link>
+          <Link to="/partners" className="button -block">
+            Парнерам
+          </Link>
+          <Link to="/investors" className="button -block">
+            Ивесторам
+          </Link>
+        </div>
       </div>
     </div>
-  </footer>
-)
-
-export default Footer
+  )
+}

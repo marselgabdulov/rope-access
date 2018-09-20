@@ -5,7 +5,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import Link from 'gatsby-link'
 
 import { Nav } from '../components/Nav/Nav'
-import Footer from '../components/Footer/Footer'
+import { Footer } from '../components/Footer/Footer'
 // import '../styles/normalize.css'
 import './layout.scss'
 
@@ -35,7 +35,7 @@ const Layout = ({ children }) => (
           <Nav />
           <main>{children}</main>
         </div>
-        {/* <Footer id="page-wrap" /> */}
+        <Footer />
       </>
     )}
   />
