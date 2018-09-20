@@ -2,6 +2,7 @@ import React from 'react'
 
 import Layout from '../components/layout'
 import ModalComponent from '../components/ModalComponent'
+import { Typewriter } from '../components/Typewriter'
 import '../styles/index.css'
 
 const IndexPage = () => (
@@ -34,6 +35,10 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
+    <Typewriter
+      className="title-desc"
+      texts={['bread.', 'buns.', 'balls.', 'rolls.', 'puffs.', 'goodness.']}
+    />
   </Layout>
 )
 

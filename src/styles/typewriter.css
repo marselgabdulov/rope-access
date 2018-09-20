@@ -1,0 +1,8 @@
+.title-desc {
+  display: block;
+  color: red;
+}
+
+.title-desc::selection {
+  background-color: black;
+}

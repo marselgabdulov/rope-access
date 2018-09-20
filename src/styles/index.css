@@ -1,5 +1,9 @@
 @import 'colors.css';
 
+.typist {
+  display: inline-block;
+}
+
 .hero {
   display: -ms-flex;
   display: -ms-flexbox;
