@@ -28,7 +28,9 @@ const IndexPage = () => (
           <a className="hero__link" href="mailto:info@vysotnik-msk.ru">
             info@vysotnik-msk.ru
           </a>
-          <ModalComponent />
+          <div className="hero__button">
+            <ModalComponent />
+          </div>
         </div>
       </div>
     </div>

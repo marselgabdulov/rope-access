@@ -1,10 +1,5 @@
 @import 'colors.css';
 
-.hero__button {
-  margin-bottom: 20px;
-  margin-top: 10%;
-}
-
 .modal__open-button {
   background: var(--main-orange-color);
   color: white;

@@ -6,7 +6,7 @@
   display: flex;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  height: 90vh;
+  min-height: 100vh;
   box-sizing: border-box;
   color: #fff;
   background: linear-gradient(0.5turn, rgba(0, 0, 0, 0.5), transparent),
@@ -21,25 +21,22 @@
   display: flex;
   flex-direction: column;
   width: 80%;
-  margin: 10% auto;
+  margin: 20% auto auto auto;
   text-align: center;
 }
 .hero__info {
   width: 100%;
-  padding-top: 0;
-  margin-top: 0;
-  font-size: 1em;
-  line-height: 1.5;
+  line-height: 2em;
 }
 .hero__title {
   font-size: 2em;
   font-weight: bold;
 }
 .hero__title-secondary {
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 .hero__title-garanty {
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: bold;
 }
 .hero__contact {
@@ -51,11 +48,7 @@
   flex-direction: column;
   line-height: 1em;
 }
-.hero__button {
-  margin-bottom: 20px;
-  margin-top: 10%;
-  padding-top: 2em;
-}
+
 .hero__link {
   color: white;
   text-decoration: none;
@@ -66,7 +59,11 @@
   color: var(--main-orange-color);
 }
 
-.main-about {
+.hero__button {
+  margin-top: 2em;
+}
+
+/* .main-about {
   padding-top: 50px;
 }
 .main-about__header {
@@ -82,8 +79,8 @@
   margin: auto;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-}
-.main-about__card {
+} */
+/* .main-about__card {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
@@ -129,7 +126,7 @@
 .main-about__card-link:hover {
   cursor: pointer;
   background-color: #ffc658;
-}
+} */
 
 @media (min-width: 992px) {
   .hero__container {
@@ -147,29 +144,31 @@
     flex-direction: column;
     flex-wrap: wrap;
     width: 45%;
+    height: 50vh;
     margin: auto;
-    padding-top: 0;
-    line-height: 3em;
+    justify-content: space-between;
+    height: 30vh;
   }
   .hero__title {
     font-size: 5em;
-    padding-bottom: 0.5em;
   }
   .hero__title-secondary {
     font-size: 2em;
   }
   .hero__title-garanty {
+    line-height: 1.5em;
     font-size: 2em;
   }
   .hero__contact {
+    margin-top: 30vh;
+    height: 30vh;
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    width: 25%;
-    margin: auto;
-    padding: 0;
+    width: 35%;
+    justify-content: space-between;
   }
   .hero__link {
     font-weight: bold;
@@ -182,7 +181,7 @@
     margin-top: 0;
   }
 
-  .main-about__header {
+  /* .main-about__header {
     text-align: center;
     font-size: 2.5em;
   }
@@ -194,5 +193,5 @@
   .main-about__card-button {
     text-align: center;
     font-size: 1.5em;
-  }
+  } */
 }

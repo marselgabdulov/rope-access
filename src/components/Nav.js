@@ -1,34 +1,73 @@
-import React, { Component, Fragment } from 'react'
+import React from 'react'
 import Link from 'gatsby-link'
-import { slide as Menu } from 'react-burger-menu'
+
+import { BurgerIcon } from '../icons/BurgerIcon'
+import { CrossIcon } from '../icons/CrossIcon'
+
 import '../styles/nav.css'
 
-class Nav extends Component {
+class Nav extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = { isOpened: false }
+  }
+
+  handleClose = () => this.setState({ isOpened: false })
+  handleOpen = () => this.setState({ isOpened: true })
+
+  renderLinks = (links, onClick) => {
+    return links.map(link => (
+      <Link
+        key={link.to}
+        className={''}
+        to={link.to}
+        title={link.name}
+        onClick={onClick}
+      >
+        {link.name}
+      </Link>
+    ))
+  }
+
   render() {
+    const links = [
+      { name: 'Главная', to: '/' },
+      { name: 'О нас', to: '/about' },
+      { name: 'Услуги', to: '/services' },
+      { name: 'Контакты', to: '/contacts' },
+      { name: 'Блог', to: '/blog' },
+    ]
     return (
-      <Fragment>
-        <Menu right>
-          <Link to="/" className="menu-item" id="home">
-            Главная
-          </Link>
+      <div>
+        <a
+          className="mobile-menu -open"
+          onClick={this.handleOpen}
+          role="button"
+          tabIndex={0}
+        >
+          <BurgerIcon />
+        </a>
 
-          <Link to="/about" className="menu-item" id="home">
-            О нас
-          </Link>
-
-          <Link to="/services" className="menu-item" id="home">
-            Услуги
-          </Link>
-
-          <Link to="/contacts" className="menu-item" id="home">
-            Контакты
-          </Link>
-
-          <Link to="/blog" className="menu-item" id="home">
-            Блог
-          </Link>
-        </Menu>
-      </Fragment>
+        <nav
+          id="mobile-nav"
+          className={`main-nav -mobile ${
+            this.state.isOpened ? 'is-opened' : null
+          }`}
+        >
+          <a
+            className="mobile-menu -close"
+            onClick={this.handleClose}
+            role="button"
+            tabIndex={0}
+          >
+            <CrossIcon />
+          </a>
+          {this.renderLinks(links, this.handleClose)}
+        </nav>
+        <nav className="main-nav -desktop col md-9 md-push-2">
+          {this.renderLinks(links)}
+        </nav>
+      </div>
     )
   }
 }

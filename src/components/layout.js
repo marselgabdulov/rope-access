@@ -39,7 +39,7 @@ const Layout = ({ children }) => (
           </Link>
         </div>
         <Nav />
-        <main id="page-wrap">{children}</main>
+        <main>{children}</main>
         <Footer id="page-wrap" />
       </>
     )}
