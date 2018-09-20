@@ -146,7 +146,7 @@
     display: -ms-flex;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     width: 45%;
     height: 50vh;
     margin: auto;
