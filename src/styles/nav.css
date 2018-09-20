@@ -1,3 +1,5 @@
+@import 'colors.css';
+
 .bm-burger-button {
   position: fixed;
   width: 36px;
@@ -16,12 +18,12 @@
   background: #bdc3c7;
 }
 .bm-menu {
-  background: #373a47;
+  background: var(--main-grey-color);
   padding: 1.2em;
   width: auto;
 }
 .bm-morph-shape {
-  fill: #373a47;
+  fill: var(--main-grey-color);
 }
 .bm-item-list {
   color: #b8b7ad;
@@ -35,7 +37,7 @@
   text-decoration: none;
 }
 .bm-item:hover {
-  color: orange;
+  color: var(--main-orange-color);
 }
 .bm-overlay {
   background: rgba(0; 0; 0; 0.3);

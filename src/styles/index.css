@@ -1,3 +1,5 @@
+@import 'colors.css';
+
 .hero {
   display: -ms-flex;
   display: -ms-flexbox;
@@ -61,7 +63,7 @@
   line-height: 1.8em;
 }
 .hero__link:hover {
-  color: #f36b23;
+  color: var(--main-orange-color);
 }
 
 .main-about {

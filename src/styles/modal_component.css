@@ -1,11 +1,13 @@
+@import 'colors.css';
+
 .hero__button {
   margin-bottom: 20px;
   margin-top: 10%;
 }
 
 .modal__open-button {
-  background: orange;
-  color: #fff;
+  background: var(--main-orange-color);
+  color: white;
   border: 0;
   width: 50%;
   height: 2em;
@@ -18,7 +20,7 @@
 }
 
 .modal__open-button:hover {
-  background: #333;
+  background: var(--main-grey-color);
   cursor: pointer;
 }
 

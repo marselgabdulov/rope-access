@@ -1,6 +1,8 @@
+@import 'colors.css';
+
 .footer {
   height: 400px;
-  background-color: rgb(79, 80, 82);
+  background-color: var(--main-grey-color);
   color: white;
 }
 
@@ -42,15 +44,15 @@
 }
 
 .footer__link:hover {
-  color: orange;
+  color: var(--main-orange-color);
 }
 
 .whatsapp {
-  color: rgb(45, 168, 61);
+  color: var(--whatsapp-color);
 }
 
 .whatsapp:hover {
-  color: rgb(49, 195, 68);
+  color: var(--whatsapp-hover-color);
 }
 
 .footer__address,
