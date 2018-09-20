@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react'
-import RequestForm from '../components/RequestForm'
+import RequestForm from '../RequestForm/RequestForm'
 import Modal from 'react-modal'
-import '../styles/modal_component.css'
+import './modal_component.scss'
 
 Modal.setAppElement('body')
 

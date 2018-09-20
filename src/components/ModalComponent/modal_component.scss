@@ -1,4 +1,4 @@
-@import 'colors.css';
+@import '../../styles/colors.css';
 
 .modal__open-button {
   background: var(--main-orange-color);
@@ -12,11 +12,11 @@
   text-align: center;
   margin-bottom: 50px;
   cursor: pointer;
-}
 
-.modal__open-button:hover {
-  background: var(--main-grey-color);
-  cursor: pointer;
+  &:hover {
+    background: var(--main-grey-color);
+    cursor: pointer;
+  }
 }
 
 .modal__content {
@@ -43,13 +43,12 @@
 }
 .modal__close-button {
   color: black;
-}
-
-.modal__close-button:hover,
-.modal__close-button:focus {
-  color: red;
-  text-decoration: none;
-  cursor: pointer;
+  &:hover,
+  &:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+  }
 }
 
 .modal__body {

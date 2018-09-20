@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import Layout from '../components/layout'
+import Layout from '../layout/layout'
 import { Section } from '../components/Section'
 import { Typewriter } from '../components/Typewriter'
 
@@ -12,9 +12,9 @@ const IndexPage = () => (
           <h1 className="col -block md-push-1 lg-push-2 title">
             ООО &laquo;Высотник&raquo;
             <br />
-            Высотные работы
+            Высотные работы.
             <br />
-            <span>В Москве и области</span>
+            <span>В Москве и области.</span>
             <Typewriter
               className="title-desc"
               texts={[

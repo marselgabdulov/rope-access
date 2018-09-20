@@ -1,11 +1,9 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import { BurgerIcon } from '../icons/BurgerIcon'
-import { CrossIcon } from '../icons/CrossIcon'
-import { ModalComponent } from './ModalComponent'
-
-import '../styles/nav.css'
+import { BurgerIcon } from '../../icons/BurgerIcon'
+import { CrossIcon } from '../../icons/CrossIcon'
+import { ModalComponent } from '../ModalComponent/ModalComponent'
 
 export class Nav extends React.Component {
   constructor(props) {
