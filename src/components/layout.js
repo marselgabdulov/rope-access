@@ -5,10 +5,10 @@ import { StaticQuery, graphql } from 'gatsby'
 import Link from 'gatsby-link'
 import logo from '../images/logo-small.png'
 
-import Nav from './Nav'
+import { Nav } from './Nav'
 import Footer from './Footer'
 import '../styles/normalize.css'
-import '../styles/layout.css'
+import '../styles/layout.scss'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -32,15 +32,11 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
-        <div className="logo">
-          <Link to="/" className="nav__link">
-            <img src={logo} alt="Высотник" />
-          </Link>
+        <div className="container">
+          <Nav />
+          <main>{children}</main>
         </div>
-        <Nav />
-        <main>{children}</main>
-        <Footer id="page-wrap" />
+        {/* <Footer id="page-wrap" /> */}
       </>
     )}
   />

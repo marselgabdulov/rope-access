@@ -3,10 +3,11 @@ import Link from 'gatsby-link'
 
 import { BurgerIcon } from '../icons/BurgerIcon'
 import { CrossIcon } from '../icons/CrossIcon'
+import { ModalComponent } from './ModalComponent'
 
 import '../styles/nav.css'
 
-class Nav extends React.Component {
+export class Nav extends React.Component {
   constructor(props) {
     super(props)
     this.state = { isOpened: false }
@@ -19,7 +20,7 @@ class Nav extends React.Component {
     return links.map(link => (
       <Link
         key={link.to}
-        className={''}
+        // className={link.to === '/buy' ? 'button' : ''}
         to={link.to}
         title={link.name}
         onClick={onClick}
@@ -38,7 +39,7 @@ class Nav extends React.Component {
       { name: 'Блог', to: '/blog' },
     ]
     return (
-      <div>
+      <div className="grid">
         <a
           className="mobile-menu -open"
           onClick={this.handleOpen}
@@ -66,10 +67,9 @@ class Nav extends React.Component {
         </nav>
         <nav className="main-nav -desktop col md-9 md-push-2">
           {this.renderLinks(links)}
+          <ModalComponent />
         </nav>
       </div>
     )
   }
 }
-
-export default Nav
