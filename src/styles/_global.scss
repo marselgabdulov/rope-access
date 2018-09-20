@@ -109,9 +109,9 @@ h3,
 
 p {
   margin-bottom: 20px;
-
   @include medium {
     margin-bottom: 40px;
+    font-size: 1.5em;
   }
 }
 
@@ -162,6 +162,10 @@ a {
       align-items: baseline;
     }
 
+    a {
+      font-size: 1.2em;
+    }
+
     a:not(.button) {
       text-decoration: none;
       padding: 10px 0;
@@ -208,14 +212,16 @@ a {
   text-decoration: none;
   display: inline-block;
   border: 1px solid currentColor;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 30px;
   padding: 15px 30px;
   letter-spacing: 0.2em;
+  background-color: white;
 
   &:hover {
     background-color: $colorYellow;
     text-decoration: none;
+    color: white;
     cursor: pointer;
   }
 

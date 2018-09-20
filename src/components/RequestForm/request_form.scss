@@ -17,15 +17,18 @@
     display: none;
   }
 
-  input,
-  textarea {
+  .input-name,
+  .input-email,
+  .input-phone,
+  .input-address,
+  .input-problem,
+  .input-date {
     width: 100%;
     height: 3em;
-    margin: 20px auto;
+    margin: 1em auto;
     display: inline-block;
     box-sizing: border-box;
     font-size: 1em;
-    text-indent: 1em;
     border: 2px solid black;
   }
 
@@ -38,7 +41,6 @@
     width: 100%;
     font-size: 1em;
     height: 3em;
-    border-radius: 8px;
 
     &:hover {
       background-color: var(--main-grey-color);
@@ -51,31 +53,41 @@
     width: 90%;
     margin: auto;
 
-    input,
-    textarea {
+    .input-name,
+    .input-email,
+    .input-phone,
+    .input-address,
+    .input-problem,
+    .input-date {
       width: 100%;
       height: 2em;
-      margin-top: 10px;
-      display: inline-block;
+      margin-top: 1em;
+      display: flex;
       box-sizing: border-box;
-      font-size: 1.5em;
-      text-indent: 1em;
+      justify-content: center;
       border: 2px solid black;
     }
 
-    textarea {
+    .input-phone,
+    .input-address,
+    .input-problem {
+      text-indent: 2em;
+      font-size: 0.9em;
+    }
+
+    .input-problem {
       height: 4em;
-      padding-top: 10px;
+      padding-top: 0.5em;
+      width: 100%;
     }
 
     .form-button {
-      margin-top: 30px;
+      margin: 30px 0;
       border: none;
       cursor: pointer;
       width: 100%;
-      font-size: 1.5em;
+      font-size: 1.2em;
       height: 2.5em;
-      border-radius: 8px;
     }
 
     .input-email,

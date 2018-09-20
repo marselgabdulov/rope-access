@@ -6,7 +6,7 @@ import Link from 'gatsby-link'
 
 import { Nav } from '../components/Nav/Nav'
 import Footer from '../components/Footer/Footer'
-import '../styles/normalize.css'
+// import '../styles/normalize.css'
 import './layout.scss'
 
 const Layout = ({ children }) => (
