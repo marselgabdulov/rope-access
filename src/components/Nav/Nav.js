@@ -1,12 +1,11 @@
-import React from 'react'
+import React, { Component, Fragment } from 'react'
 import Link from 'gatsby-link'
 
 import { BurgerIcon } from '../../icons/BurgerIcon'
 import { CrossIcon } from '../../icons/CrossIcon'
-
 import './nav.css'
 
-class Nav extends React.Component {
+class Nav extends Component {
   constructor(props) {
     super(props)
     this.state = { isOpened: false }
@@ -25,14 +24,14 @@ class Nav extends React.Component {
 
   render() {
     const links = [
-      { name: 'Главная', to: '/' },
-      { name: 'О нас', to: '/about' },
-      { name: 'Услуги', to: '/services' },
-      { name: 'Контакты', to: '/contacts' },
-      { name: 'Блог', to: '/blog' },
+      { name: 'главная', to: '/' },
+      { name: 'о нас', to: '/about' },
+      { name: 'услуги', to: '/services' },
+      { name: 'контакты', to: '/contacts' },
+      { name: 'блог', to: '/blog' },
     ]
     return (
-      <div className="grid">
+      <Fragment>
         <a
           className="mobile-menu -open"
           onClick={this.handleOpen}
@@ -58,7 +57,8 @@ class Nav extends React.Component {
           </a>
           {this.renderLinks(links, this.handleClose)}
         </nav>
-      </div>
+        <nav className="main-nav -desktop ">{this.renderLinks(links)}</nav>
+      </Fragment>
     )
   }
 }

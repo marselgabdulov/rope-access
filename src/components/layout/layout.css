@@ -36,7 +36,7 @@ main {
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   main {
-    padding-top: 0;
+    padding: 0;
     min-height: calc(100vh - 250px);
   }
   .logo {

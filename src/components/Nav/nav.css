@@ -43,7 +43,7 @@
 
 .main-nav a {
   color: var(--main-blue-color);
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: bold;
 }
 
@@ -60,15 +60,16 @@
   }
 
   .main-nav.-desktop {
-    height: 120px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
   }
 
-  .main-nav.-desktop a:not(.button) {
+  .main-nav.-desktop a {
     display: inline-block;
-    padding: 15px 20px;
+    margin: 0 20px;
+    text-transform: uppercase;
   }
 
   .main-nav.-desktop a:not(.button):not(.active):hover {
