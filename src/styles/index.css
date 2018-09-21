@@ -1,5 +1,6 @@
 @import 'colors.css';
 
+<<<<<<< HEAD
 .typist {
   display: inline-block;
 }
@@ -71,6 +72,8 @@
   margin-top: 2em;
 }
 
+=======
+>>>>>>> 07cb4da5daa97e0c0ea27d2894fcb95004135596
 /* .main-about {
   padding-top: 50px;
 }
@@ -137,6 +140,7 @@
 } */
 
 @media (min-width: 992px) {
+<<<<<<< HEAD
   .hero__container {
     flex-direction: row;
     width: 100%;
@@ -192,6 +196,8 @@
     margin-top: 0;
   }
 
+=======
+>>>>>>> 07cb4da5daa97e0c0ea27d2894fcb95004135596
   /* .main-about__header {
     text-align: center;
     font-size: 2.5em;

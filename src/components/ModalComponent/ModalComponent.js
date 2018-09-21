@@ -1,11 +1,18 @@
+<<<<<<< HEAD:src/components/ModalComponent/ModalComponent.js
 import React, { Component } from 'react'
 import RequestForm from '../RequestForm/RequestForm'
 import Modal from 'react-modal'
 import './modal_component.css'
+=======
+import React, { Component, Fragment } from 'react'
+import RequestForm from '../RequestForm/RequestForm'
+import Modal from 'react-modal'
+import './modal_component.scss'
+>>>>>>> 07cb4da5daa97e0c0ea27d2894fcb95004135596:src/components/ModalComponent/ModalComponent.js
 
 Modal.setAppElement('body')
 
-class ModalComponent extends Component {
+export class ModalComponent extends Component {
   state = {
     showModal: false,
   }
@@ -20,8 +27,8 @@ class ModalComponent extends Component {
 
   render() {
     return (
-      <div>
-        <button onClick={this.handleOpenModal} className="modal__open-button">
+      <Fragment>
+        <button onClick={this.handleOpenModal} className="button">
           Заказать
         </button>
         <Modal
@@ -43,9 +50,7 @@ class ModalComponent extends Component {
           </div>
           <RequestForm />
         </Modal>
-      </div>
+      </Fragment>
     )
   }
 }
-
-export default ModalComponent

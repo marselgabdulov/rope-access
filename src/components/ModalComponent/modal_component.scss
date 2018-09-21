@@ -1,0 +1,75 @@
+@import '../../styles/colors.css';
+
+.modal__open-button {
+  background: var(--main-orange-color);
+  color: white;
+  border: 0;
+  width: 50%;
+  height: 2em;
+  border-radius: 8px;
+  font-size: 1.6em;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 50px;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--main-grey-color);
+    cursor: pointer;
+  }
+}
+
+.modal__content {
+  background-color: white;
+  margin: 40% auto;
+  width: 100%;
+  height: auto;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  overflow: hidden;
+}
+.modal__header {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+  font-size: 1em;
+  padding-top: 1em;
+}
+.modal__close-button {
+  color: black;
+  &:hover,
+  &:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.modal__body {
+  color: black;
+}
+
+@media (min-width: 992px) {
+  .modal__open-button {
+    width: 200px;
+    height: 60px;
+    border-radius: 8px;
+    font-size: 1.5em;
+    margin-bottom: 0;
+  }
+
+  .modal__content {
+    width: 50%;
+    margin: 10% auto;
+  }
+
+  .modal__header {
+    font-size: 2em;
+  }
+}
