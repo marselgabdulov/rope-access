@@ -21,7 +21,7 @@ class ModalComponent extends Component {
   render() {
     return (
       <Fragment>
-        <button onClick={this.handleOpenModal} className="button">
+        <button onClick={this.handleOpenModal} className="modal__open-button">
           Заказать
         </button>
         <Modal

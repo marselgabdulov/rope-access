@@ -4,13 +4,13 @@
   background: var(--main-orange-color);
   color: white;
   border: 0;
-  width: 50%;
+  width: 60%;
   height: 2em;
   border-radius: 8px;
   font-size: 1.6em;
   font-weight: 400;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 3em;
   cursor: pointer;
 }
 
