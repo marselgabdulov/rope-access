@@ -1,18 +1,11 @@
-<<<<<<< HEAD:src/components/ModalComponent/ModalComponent.js
-import React, { Component } from 'react'
-import RequestForm from '../RequestForm/RequestForm'
-import Modal from 'react-modal'
-import './modal_component.css'
-=======
 import React, { Component, Fragment } from 'react'
 import RequestForm from '../RequestForm/RequestForm'
 import Modal from 'react-modal'
-import './modal_component.scss'
->>>>>>> 07cb4da5daa97e0c0ea27d2894fcb95004135596:src/components/ModalComponent/ModalComponent.js
+import './modal_component.css'
 
 Modal.setAppElement('body')
 
-export class ModalComponent extends Component {
+class ModalComponent extends Component {
   state = {
     showModal: false,
   }
@@ -54,3 +47,5 @@ export class ModalComponent extends Component {
     )
   }
 }
+
+export default ModalComponent

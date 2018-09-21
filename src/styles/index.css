@@ -1,7 +1,6 @@
 @import 'colors.css';
 
-<<<<<<< HEAD
-.typist {
+<<<<<<< head .typist {
   display: inline-block;
 }
 
@@ -72,8 +71,6 @@
   margin-top: 2em;
 }
 
-=======
->>>>>>> 07cb4da5daa97e0c0ea27d2894fcb95004135596
 /* .main-about {
   padding-top: 50px;
 }
@@ -140,7 +137,6 @@
 } */
 
 @media (min-width: 992px) {
-<<<<<<< HEAD
   .hero__container {
     flex-direction: row;
     width: 100%;
@@ -195,20 +191,4 @@
   .hero__button {
     margin-top: 0;
   }
-
-=======
->>>>>>> 07cb4da5daa97e0c0ea27d2894fcb95004135596
-  /* .main-about__header {
-    text-align: center;
-    font-size: 2.5em;
-  }
-  .main-about__card {
-    width: 30%;
-  }
-  .main-about__card-header,
-  .main-about__card-text,
-  .main-about__card-button {
-    text-align: center;
-    font-size: 1.5em;
-  } */
 }

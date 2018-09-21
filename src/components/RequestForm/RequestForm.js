@@ -1,9 +1,5 @@
 import React from 'react'
-<<<<<<< HEAD:src/components/RequestForm/RequestForm.js
 import './request_form.css'
-=======
-import './request_form.scss'
->>>>>>> 07cb4da5daa97e0c0ea27d2894fcb95004135596:src/components/RequestForm/RequestForm.js
 
 const RequestForm = () => (
   <form

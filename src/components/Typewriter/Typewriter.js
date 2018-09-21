@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 import Typist from 'react-typist'
-<<<<<<< HEAD:src/components/Typewriter/Typewriter.js
+
 import './typewriter.css'
-=======
->>>>>>> 07cb4da5daa97e0c0ea27d2894fcb95004135596:src/components/Typewriter.js
 
 export class Typewriter extends Component {
   state = {

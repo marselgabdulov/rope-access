@@ -17,13 +17,7 @@ class Nav extends React.Component {
 
   renderLinks = (links, onClick) => {
     return links.map(link => (
-      <Link
-        key={link.to}
-        // className={link.to === '/buy' ? 'button' : ''}
-        to={link.to}
-        title={link.name}
-        onClick={onClick}
-      >
+      <Link key={link.to} to={link.to} title={link.name} onClick={onClick}>
         {link.name}
       </Link>
     ))
@@ -64,11 +58,9 @@ class Nav extends React.Component {
           </a>
           {this.renderLinks(links, this.handleClose)}
         </nav>
-        <nav className="main-nav -desktop col md-9 md-push-2">
-          {this.renderLinks(links)}
-          <ModalComponent />
-        </nav>
       </div>
     )
   }
 }
+
+export default Nav
