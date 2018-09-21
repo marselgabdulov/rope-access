@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 
 class BlogPost extends Component {
   render() {
@@ -13,10 +12,6 @@ class BlogPost extends Component {
       </div>
     )
   }
-}
-
-BlogPost.propTypes = {
-  data: PropTypes.object.isRequired,
 }
 
 export default BlogPost
