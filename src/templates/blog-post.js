@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class BlogPost extends Component {
+class BlogPostTemplate extends Component {
   render() {
     const { title, content } = this.props.data.contentfulRopeAccessBlog
     return (
@@ -14,7 +14,7 @@ class BlogPost extends Component {
   }
 }
 
-export default BlogPost
+export default BlogPostTemplate
 
 export const pageQuery = graphql`
   query blogPostQuery($slug: String!) {

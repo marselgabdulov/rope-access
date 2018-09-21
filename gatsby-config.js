@@ -24,6 +24,14 @@ module.exports = {
         accessToken: `667ba263e7d7c0fa514aff575e4d2ee9e84994884ed8c9c83fc54176913fb817`,
       },
     },
+    `gatsby-plugin-catch-links`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/pages`,
+        name: 'pages',
+      },
+    },
     `gatsby-transformer-remark`,
   ],
 }
