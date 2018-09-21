@@ -1,4 +1,4 @@
-@import 'colors.css';
+@import '../../styles/colors.css';
 
 .modal__open-button {
   background: var(--main-orange-color);

@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/request_form.css'
+import './request_form.css'
 
 const RequestForm = () => (
   <form

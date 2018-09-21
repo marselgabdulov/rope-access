@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import RequestForm from '../components/RequestForm'
+import RequestForm from '../RequestForm/RequestForm'
 import Modal from 'react-modal'
-import '../styles/modal_component.css'
+import './modal_component.css'
 
 Modal.setAppElement('body')
 

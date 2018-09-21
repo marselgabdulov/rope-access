@@ -1,20 +1,19 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import '../styles/footer.css'
+import './footer.css'
 
 const Footer = () => (
   <footer className="footer">
     <div className="footer__container">
-      <div className="footer__address footer__section">
+      {/* <div className="footer__address footer__section">
         <span className="footer__block-header">Адрес</span>
         <ul className="footer__items">
           <li className="footer__item">111033, г. Москва,</li>
           <li className="footer__item">Золоторожский средний</li>
           <li className="footer__item">переулок, д. 13</li>
         </ul>
-      </div>
+      </div> */}
       <div className="footer__contacts  footer__section">
-        <span className="footer__block-header">Контакты</span>
         <ul className="footer__items">
           <li className="footer__item">
             <a className="footer__link" href="tel:+74957963303">
@@ -42,7 +41,6 @@ const Footer = () => (
         </ul>
       </div>
       <div className="footer__requisites  footer__section">
-        <span className="footer__block-header">Меню</span>
         <ul className="footer__items">
           <li className="footer__item">
             <Link to="/" className="footer__link">
@@ -72,7 +70,6 @@ const Footer = () => (
         </ul>
       </div>
       <div className="footer__working-time  footer__section">
-        <span className="footer__block-header">Время работы</span>
         <ul className="footer__items">
           <li>Ежедневно: 9:00—20:00</li>
         </ul>
@@ -81,13 +78,18 @@ const Footer = () => (
       <div className="footer__admin-links  footer__section">
         <ul className="footer__items">
           <li className="footer__item">
-            <Link to="/admin" className="footer__link">
-              техподдержка
+            <Link to="/vacancies" className="footer__link">
+              вакансии
             </Link>
           </li>
           <li className="footer__item">
-            <Link to="/vacancies" className="footer__link">
-              викансии
+            <Link to="/partners" className="footer__link">
+              партнерам/поставщикам
+            </Link>
+          </li>
+          <li className="footer__item">
+            <Link to="/investors" className="footer__link">
+              инвесторам
             </Link>
           </li>
         </ul>

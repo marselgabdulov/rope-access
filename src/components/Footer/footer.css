@@ -1,4 +1,4 @@
-@import 'colors.css';
+@import '../../styles/colors.css';
 
 .footer {
   height: 400px;
@@ -10,7 +10,8 @@
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  width: 100%;
+  width: 80%;
+  margin: auto;
   justify-content: space-between;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;

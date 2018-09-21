@@ -39,6 +39,10 @@
 .hero__title-secondary {
   font-size: 1.3em;
 }
+.hero__title-typing {
+  font-size: 1.3em;
+  color: var(--main-orange-color);
+}
 .hero__title-garanty {
   font-size: 1.3em;
   font-weight: bold;
@@ -157,6 +161,9 @@
     font-size: 5em;
   }
   .hero__title-secondary {
+    font-size: 2em;
+  }
+  .hero__title-typing {
     font-size: 2em;
   }
   .hero__title-garanty {

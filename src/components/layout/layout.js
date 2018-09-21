@@ -3,12 +3,12 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import Link from 'gatsby-link'
-import logo from '../images/logo-small.png'
+import logo from '../../images/logo-small.png'
 
-import Nav from './Nav'
-import Footer from './Footer'
-import '../styles/normalize.css'
-import '../styles/layout.css'
+import Nav from '../Nav/Nav'
+import Footer from '../Footer/Footer'
+import '../../styles/normalize.css'
+import './layout.css'
 
 const Layout = ({ children }) => (
   <StaticQuery

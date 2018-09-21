@@ -1,8 +1,8 @@
 import React from 'react'
 
-import Layout from '../components/layout'
-import ModalComponent from '../components/ModalComponent'
-import { Typewriter } from '../components/Typewriter'
+import Layout from '../components/layout/layout'
+import ModalComponent from '../components/ModalComponent/ModalComponent'
+import { Typewriter } from '../components/Typewriter/Typewriter'
 import '../styles/index.css'
 
 const IndexPage = () => (
@@ -12,9 +12,11 @@ const IndexPage = () => (
         <div className="hero__info">
           <span className="hero__title">Остекление</span>
           <br />
-          <span className="hero__title-secondary">
-            Замена, монтаж и обслуживание.
-          </span>
+          <Typewriter
+            className="hero__title-typing"
+            texts={['Замена.', 'Монтаж.', 'Обслуживание.']}
+          />
+
           <br />
           <span className="hero__title-secondary">
             Работаем по всей Москве и области.
@@ -35,10 +37,6 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
-    <Typewriter
-      className="title-desc"
-      texts={['bread.', 'buns.', 'balls.', 'rolls.', 'puffs.', 'goodness.']}
-    />
   </Layout>
 )
 
