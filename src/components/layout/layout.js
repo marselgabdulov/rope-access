@@ -8,7 +8,7 @@ import logo from '../../images/logo-small.png'
 import Nav from '../Nav/Nav'
 import Footer from '../Footer/Footer'
 import '../../styles/normalize.css'
-import './layout.css'
+import '../../styles/layout.css'
 
 const Layout = ({ children }) => (
   <StaticQuery

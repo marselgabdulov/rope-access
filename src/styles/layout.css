@@ -18,6 +18,12 @@ main {
   min-height: calc(100vh - 400px);
 }
 
+textarea:focus,
+input:focus,
+a:focus {
+  outline: none;
+}
+
 .logo {
   display: none;
 }
@@ -28,9 +34,42 @@ main {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   flex-direction: column;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.aligner-center {
+  max-width: 80%;
+}
+
+.row {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+}
+
+.col {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-right: 2em;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  line-height: 1.5em;
 }
 
 /* Medium devices (desktops, 992px and up) */
