@@ -13,10 +13,10 @@ const IndexPage = () => (
         <div className="hero__info">
           <span className="hero__title">Остекление</span>
           <br />
-          <Typewriter
+          {/* <Typewriter
             className="hero__title-typing"
             texts={['Замена.', 'Монтаж.', 'Обслуживание.']}
-          />
+          /> */}
 
           <br />
           <span className="hero__title-secondary">
