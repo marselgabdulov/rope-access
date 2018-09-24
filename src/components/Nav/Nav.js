@@ -33,6 +33,7 @@ class Nav extends Component {
     return (
       <Fragment>
         <a
+          href="#"
           className="mobile-menu -open"
           onClick={this.handleOpen}
           role="button"
@@ -48,6 +49,7 @@ class Nav extends Component {
           }`}
         >
           <a
+            href="#"
             className="mobile-menu -close"
             onClick={this.handleClose}
             role="button"

@@ -7,6 +7,7 @@ export function BurgerIcon() {
       viewBox="0 0 32 32"
       width="32"
       height="32"
+      color="black"
       fill="none"
       stroke="currentcolor"
       strokeLinecap="round"

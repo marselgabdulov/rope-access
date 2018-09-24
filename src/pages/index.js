@@ -3,6 +3,7 @@ import React from 'react'
 import Layout from '../components/layout/layout'
 import ModalComponent from '../components/ModalComponent/ModalComponent'
 import { Typewriter } from '../components/Typewriter/Typewriter'
+import ServiceCards from '../components/ServiceCards/ServiceCards'
 import '../styles/index.css'
 
 const IndexPage = () => (
@@ -36,6 +37,9 @@ const IndexPage = () => (
           </div>
         </div>
       </div>
+    </div>
+    <div className="container">
+      <ServiceCards />
     </div>
   </Layout>
 )

@@ -40,7 +40,7 @@ const Layout = ({ children }) => (
         </div>
         <Nav />
         <main>{children}</main>
-        <Footer id="page-wrap" />
+        <Footer />
       </>
     )}
   />
