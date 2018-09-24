@@ -25,7 +25,7 @@ class Nav extends Component {
   render() {
     const links = [
       { name: 'главная', to: '/' },
-      { name: 'о нас', to: '/about' },
+      // { name: 'о нас', to: '/about' },
       { name: 'услуги', to: '/services' },
       { name: 'контакты', to: '/contacts' },
       { name: 'блог', to: '/blog' },

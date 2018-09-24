@@ -1,9 +1,11 @@
 html {
   font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Inconsolata', monospace; */
 }
 
 body {
-  font-size: 1em;
+  font-size: 1.2em;
+  line-height: 1.8em;
   padding: 0;
   margin: 0;
 }
@@ -29,7 +31,7 @@ a:focus {
 }
 
 .container {
-  width: 100%;
+  width: 90%;
   margin: auto;
   display: -webkit-flex;
   display: -ms-flex;
@@ -38,10 +40,6 @@ a:focus {
   flex-direction: column;
   -ms-align-items: center;
   align-items: center;
-}
-
-.aligner-center {
-  max-width: 80%;
 }
 
 .row {
@@ -54,6 +52,8 @@ a:focus {
   width: 100%;
   height: auto;
   flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-between;
 }
 
 .col {
@@ -63,13 +63,20 @@ a:focus {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin-right: 2em;
 }
 
 ul {
   padding: 0;
   list-style: none;
   line-height: 1.5em;
+}
+
+.whatsapp {
+  color: var(--whatsapp-color);
+}
+
+.whatsapp:hover {
+  color: var(--whatsapp-hover-color) !important;
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -87,6 +94,10 @@ ul {
     left: 1em;
   }
   .container {
-    width: 80%;
+    max-width: 70%;
+  }
+
+  .col {
+    margin-right: 2em;
   }
 }

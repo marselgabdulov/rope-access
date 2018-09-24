@@ -5,7 +5,7 @@ import Layout from '../components/layout/layout'
 const ContactsPage = () => (
   <Layout>
     <div className="container">
-      <div className="aligner-center">
+      <div>
         <div className="row">
           <h1>ООО &laquo;Высотник&raquo;</h1>
         </div>
@@ -31,6 +31,7 @@ const ContactsPage = () => (
               </li>
               <li>
                 <a
+                  className="whatsapp"
                   href="https://wa.me/79651897920?text=Я%20заинтересован%20в%20заказе%20услуг%20остекления"
                   target="_blank"
                 >
