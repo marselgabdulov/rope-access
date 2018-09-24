@@ -1,15 +1,16 @@
 import React from 'react'
 import get from 'lodash/get'
 import ArticlePreview from '../components/ArticlePreview'
+import Layout from '../components/layout/layout'
 
 class RootIndex extends React.Component {
   render() {
     const posts = get(this, 'props.data.allContentfulRopeAccessBlog.edges')
 
     return (
-      <div style={{ background: '#fff' }}>
-        <div className="wrapper">
-          <h2 className="section-headline">Recent articles</h2>
+      <Layout>
+        <div className="container">
+          <h2>Блог</h2>
           <ul className="article-list">
             {posts.map(({ node }) => {
               return (
@@ -20,7 +21,7 @@ class RootIndex extends React.Component {
             })}
           </ul>
         </div>
-      </div>
+      </Layout>
     )
   }
 }

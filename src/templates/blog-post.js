@@ -1,15 +1,20 @@
 import React, { Component } from 'react'
+import Layout from '../components/layout/layout'
 
 class BlogPostTemplate extends Component {
   render() {
     const { title, content } = this.props.data.contentfulRopeAccessBlog
     return (
-      <div>
-        <h1>{title}</h1>
-        <div
-          dangerouslySetInnerHTML={{ __html: content.childMarkdownRemark.html }}
-        />
-      </div>
+      <Layout>
+        <div className="container">
+          <h1>{title}</h1>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: content.childMarkdownRemark.html,
+            }}
+          />
+        </div>
+      </Layout>
     )
   }
 }
