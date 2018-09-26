@@ -13,10 +13,10 @@ const IndexPage = ({ data }) => (
         <div className="intro__info">
           <p>ООО &laquo;Высотник&raquo;</p>
           <h1>Высотные работы по Москве и области</h1>
-          <Typewriter
+          {/* <Typewriter
             className="intro__typing"
             texts={['Остекление', 'Монтаж', 'Мойка']}
-          />
+          /> */}
           <p>
             <span>Гарантия от 2-х лет</span>
             <br />

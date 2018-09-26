@@ -5,15 +5,16 @@
   color: white;
   border: 0;
   width: 60%;
-  height: 2em;
-  font-size: 1.6em;
+  height: 3em;
+  font-size: 1em;
   font-weight: 400;
   text-align: center;
   cursor: pointer;
+  opacity: 0.8;
 }
 
 .modal__open-button:hover {
-  opacity: 0.8;
+  opacity: 1;
   cursor: pointer;
 }
 
@@ -65,10 +66,10 @@
 
   .modal__content {
     width: 50%;
-    margin: auto auto;
+    margin: 4em auto;
   }
 
   .modal__header {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 }
