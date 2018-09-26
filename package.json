@@ -17,6 +17,7 @@
     "react-helmet": "^5.2.0",
     "react-load-script": "0.0.6",
     "react-modal": "^3.5.1",
+    "react-smooth": "^1.0.0",
     "react-typist": "^2.0.4",
     "scroll-to-element": "^2.0.2"
   },

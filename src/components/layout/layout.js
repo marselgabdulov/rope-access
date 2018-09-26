@@ -5,6 +5,8 @@ import { StaticQuery, graphql } from 'gatsby'
 import Link from 'gatsby-link'
 import logo from '../../images/logo-small.png'
 
+import Animate from 'react-smooth'
+
 import Nav from '../Nav/Nav'
 import Footer from '../Footer/Footer'
 import '../../styles/normalize.css'
@@ -39,7 +41,9 @@ const Layout = ({ children }) => (
           </Link>
         </div>
         <Nav />
-        <main>{children}</main>
+        <Animate from={{ opacity: 0 }} to={{ opacity: 1 }} easing="ease-in">
+          {({ opacity }) => <main style={{ opacity }}>{children}</main>}
+        </Animate>
         <Footer />
       </>
     )}
