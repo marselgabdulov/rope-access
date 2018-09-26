@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import Link from 'gatsby-link'
-import logo from '../../images/logo-small.png'
 
 import Animate from 'react-smooth'
 
@@ -32,15 +31,17 @@ const Layout = ({ children }) => (
             { name: 'keywords', content: 'sample, something' },
           ]}
         >
+          <link
+            href="https://fonts.googleapis.com/css?family=Montserrat:400,600&amp;subset=cyrillic,cyrillic-ext"
+            rel="stylesheet"
+          />
           <html lang="en" />
         </Helmet>
         {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
-        <div className="logo">
-          <Link to="/" className="nav__link">
-            <img src={logo} alt="Высотник" />
-          </Link>
+
+        <div className="nav__container">
+          <Nav />
         </div>
-        <Nav />
         <Animate from={{ opacity: 0 }} to={{ opacity: 1 }} easing="ease-in">
           {({ opacity }) => <main style={{ opacity }}>{children}</main>}
         </Animate>

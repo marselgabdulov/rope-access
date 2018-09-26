@@ -6,17 +6,25 @@ import { Typewriter } from '../components/Typewriter/Typewriter'
 import ServiceCards from '../components/ServiceCards/ServiceCards'
 import '../styles/index.css'
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <Layout>
-    <div className="hero">
+    <div className="container">
+      <section className="intro">
+        <div className="intro__info">
+          <h1>ООО &laquo;Высотник&raquo;</h1>
+        </div>
+        <div className="intro__image" />
+      </section>
+    </div>
+    {/* <div className="hero">
       <div className="hero__container">
         <div className="hero__info">
           <span className="hero__title">Остекление</span>
           <br />
-          {/* <Typewriter
+          <Typewriter
             className="hero__title-typing"
             texts={['Замена.', 'Монтаж.', 'Обслуживание.']}
-          /> */}
+          />
 
           <br />
           <span className="hero__title-secondary">
@@ -37,7 +45,7 @@ const IndexPage = () => (
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
     <div className="container">
       <ServiceCards />
     </div>

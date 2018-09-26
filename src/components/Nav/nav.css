@@ -7,7 +7,8 @@
 .main-nav.-mobile {
   display: none;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+
   justify-content: center;
   position: fixed;
   top: 0;
@@ -24,8 +25,25 @@
 }
 .main-nav.-mobile a {
   display: inline-block;
-  margin: 10px 0;
+  margin: 0.5em;
   text-decoration: none;
+  font-size: 1.5em;
+  color: black;
+  font-weight: normal;
+}
+
+.main-nav.-mobile .-close {
+  margin: 0.2em !important;
+}
+
+.main-nav.-mobile .-open {
+  background-color: white !important;
+}
+
+.main-nav.-mobile a:hover,
+.main-nav.-mobile a:active {
+  text-decoration: underline;
+  color: black;
 }
 
 .main-nav.-desktop {
@@ -54,6 +72,11 @@
 .main-nav a:hover {
   color: var(--main-orange-color);
 }
+
+.logo {
+  display: none;
+}
+
 @media (min-width: 992px) {
   .mobile-menu {
     display: none;
@@ -63,25 +86,46 @@
     display: none !important;
   }
 
+  .nav-container {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    width: 90%;
+    margin: auto;
+  }
+
   .main-nav.-desktop {
+    width: 80%;
     height: 100px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    font-family: 'Montserrat', sans-serif;
   }
 
   .main-nav.-desktop a {
     display: inline-block;
-    margin: 0 20px;
+    margin-left: 2em;
     text-transform: uppercase;
   }
 
-  .main-nav.-desktop a:not(.button):not(.active):hover {
+  .main-nav.-desktop a:hover {
     text-decoration: underline;
   }
 
   .main-nav.-desktop a:not(.button):first-child {
     margin-left: -20px;
+  }
+
+  .logo {
+    width: 20%;
+    display: block;
+    padding-top: 0.5em;
+    -ms-align-self: center;
+    align-self: center;
+    justify-content: flex-start;
+  }
+
+  .logo a:hover {
+    cursor: pointer;
   }
 }

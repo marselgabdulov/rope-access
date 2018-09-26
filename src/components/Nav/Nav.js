@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 
 import { BurgerIcon } from '../../icons/BurgerIcon'
 import { CrossIcon } from '../../icons/CrossIcon'
+import logo from '../../images/logo-small.png'
 import './nav.css'
 
 class Nav extends Component {
@@ -24,11 +25,11 @@ class Nav extends Component {
 
   render() {
     const links = [
-      { name: 'главная', to: '/' },
-      // { name: 'о нас', to: '/about' },
-      { name: 'услуги', to: '/services' },
-      { name: 'контакты', to: '/contacts' },
-      { name: 'блог', to: '/blog' },
+      { name: 'Главная', to: '/' },
+      { name: 'о нас', to: '/about' },
+      { name: 'Услуги', to: '/services' },
+      { name: 'Контакты', to: '/contacts' },
+      { name: 'Блог', to: '/blog' },
     ]
     return (
       <Fragment>
@@ -59,7 +60,14 @@ class Nav extends Component {
           </a>
           {this.renderLinks(links, this.handleClose)}
         </nav>
-        <nav className="main-nav -desktop ">{this.renderLinks(links)}</nav>
+        <div className="nav-container">
+          <div className="logo">
+            <Link to="/">
+              <img src={logo} alt="высотник" />
+            </Link>
+          </div>
+          <nav className="main-nav -desktop ">{this.renderLinks(links)}</nav>
+        </div>
       </Fragment>
     )
   }

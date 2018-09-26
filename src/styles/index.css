@@ -1,5 +1,29 @@
 @import 'colors.css';
 
+.intro {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  min-height: 90vh;
+}
+
+.intro__info {
+  width: 40%;
+}
+
+.intro__image {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  width: 60%;
+  position: relative;
+  background: url('../images/intro.jpg') 90% no-repeat;
+  background-size: cover;
+  height: auto;
+}
+
 .typist {
   display: inline-block;
 }
@@ -11,9 +35,9 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
   min-height: 90vh;
-  color: #fff;
-  background: linear-gradient(0.5turn, rgba(0, 0, 0, 0.5), transparent),
-    url('../images/hero7-min.jpg') 50% no-repeat;
+  color: black;
+  background: linear-gradient(to right, rgba(255, 255, 255, 1), transparent),
+    url('../images/hero2-min.jpg') 90% no-repeat;
   background-size: cover;
   width: 100%;
   position: relative;
@@ -31,7 +55,7 @@
 }
 .hero__info {
   width: 100%;
-  line-height: 2em;
+  /* line-height: 2em; */
 }
 .hero__title {
   font-size: 2em;
@@ -46,7 +70,6 @@
 }
 .hero__title-garanty {
   font-size: 1.3em;
-  font-weight: bold;
 }
 .hero__contact {
   width: 100%;
@@ -58,7 +81,7 @@
 }
 
 .hero__link {
-  color: white;
+  color: black;
   text-decoration: none;
   font-size: 1.2em;
   line-height: 1.8em;
@@ -70,71 +93,6 @@
 .hero__button {
   margin-top: 2em;
 }
-
-/* .main-about {
-  padding-top: 50px;
-}
-.main-about__header {
-  text-align: center;
-  font-size: 3em;
-}
-.main-about__cards {
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-  margin: auto;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-} */
-/* .main-about__card {
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-align-self: center;
-  -ms-flex-item-align: center;
-  justify-content: space-between;
-  width: 90%;
-  height: 22em;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 3%;
-  background-color: #fff;
-  border: 1px dotted #f36b23;
-  text-align: center;
-}
-.main-about__card-header,
-.main-about__card-text,
-.main-about__card-button {
-  text-align: center;
-  font-size: 2em;
-}
-.main-about__card-button {
-  width: 80%;
-  margin: 25px auto;
-  padding: auto;
-  color: white;
-  background-color: #f36b23;
-  height: 60px;
-  border-radius: 8px;
-  border: none;
-}
-.main-about__card-button:hover {
-  background-color: #575252;
-  cursor: pointer;
-}
-.main-about__card-link {
-  height: 2em;
-  background-color: #f36b23;
-  color: white;
-}
-.main-about__card-link:hover {
-  cursor: pointer;
-  background-color: #ffc658;
-} */
 
 @media (min-width: 992px) {
   .hero {
@@ -161,17 +119,17 @@
     height: 30vh;
   }
   .hero__title {
-    font-size: 5em;
+    font-size: 2.5em;
   }
   .hero__title-secondary {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   .hero__title-typing {
-    font-size: 4em;
+    font-size: 1.5em;
     font-weight: bold;
   }
   .hero__title-garanty {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   .hero__contact {
     display: -webkit-flex;
