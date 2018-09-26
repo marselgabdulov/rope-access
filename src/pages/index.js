@@ -8,44 +8,30 @@ import '../styles/index.css'
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <div className="container">
+    <div className="intro-container">
       <section className="intro">
         <div className="intro__info">
-          <h1>ООО &laquo;Высотник&raquo;</h1>
-        </div>
-        <div className="intro__image" />
-      </section>
-    </div>
-    {/* <div className="hero">
-      <div className="hero__container">
-        <div className="hero__info">
-          <span className="hero__title">Остекление</span>
-          <br />
+          <p>ООО &laquo;Высотник&raquo;</p>
+          <h1>Высотные работы по Москве и области</h1>
           <Typewriter
-            className="hero__title-typing"
-            texts={['Замена.', 'Монтаж.', 'Обслуживание.']}
+            className="intro__typing"
+            texts={['Остекление', 'Монтаж', 'Мойка']}
           />
-
-          <br />
-          <span className="hero__title-secondary">
-            Работаем по всей Москве и области.
-          </span>
-          <br />
-          <span className="hero__title-garanty">Гарантия от 2-х лет.</span>
-        </div>
-        <div className="hero__contact" id="hero__contact">
-          <a className="hero__link" href="tel:+74957963303">
-            +7 495 796-33-03
-          </a>
-          <a className="hero__link" href="mailto:info@vysotnik-msk.ru">
-            info@vysotnik-msk.ru
-          </a>
-          <div className="hero__button">
+          <p>
+            <span>Гарантия от 2-х лет</span>
+            <br />
+            <a href="tel:+74957963303">+7 495 796-33-03</a>
+            <br />
+            <a href="mailto:info@vysotnik-msk.ru">info@vysotnik-msk.ru</a>
+          </p>
+          <div className="intro__modal">
             <ModalComponent />
           </div>
         </div>
-      </div>
-    </div> */}
+
+        <div className="intro__image" />
+      </section>
+    </div>
     <div className="container">
       <ServiceCards />
     </div>

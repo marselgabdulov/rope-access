@@ -1,21 +1,19 @@
 @import '../../styles/colors.css';
 
 .modal__open-button {
-  background: var(--main-orange-color);
+  background: var(--main-blue-color);
   color: white;
   border: 0;
   width: 60%;
   height: 2em;
-  border-radius: 8px;
   font-size: 1.6em;
   font-weight: 400;
   text-align: center;
-  margin-bottom: 3em;
   cursor: pointer;
 }
 
 .modal__open-button:hover {
-  background: var(--main-grey-color);
+  opacity: 0.8;
   cursor: pointer;
 }
 
@@ -30,6 +28,7 @@
   flex-direction: column;
   align-self: center;
   overflow: hidden;
+  z-index: 10;
 }
 .modal__header {
   display: -webkit-flex;
@@ -60,14 +59,13 @@
   .modal__open-button {
     width: 200px;
     height: 60px;
-    border-radius: 8px;
-    font-size: 1.5em;
+    font-size: 1em;
     margin-bottom: 0;
   }
 
   .modal__content {
     width: 50%;
-    margin: 10% auto;
+    margin: auto auto;
   }
 
   .modal__header {
